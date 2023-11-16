@@ -7,6 +7,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configure the IConfiguration
+var configuration = builder.Configuration;
+
+builder.Services.AddHttpClient();
+
 builder.Services.AddSingleton<GameInstructionService>();
 
 var app = builder.Build();

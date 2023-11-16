@@ -7,7 +7,7 @@ public class GameInstructionService
     public GameInstructionService()
     {
         // Adjust the path as per your project structure
-        _filePath = "../Config/GameInstructions.txt";
+        _filePath = "./Config/GameInstructions.txt";
     }
 
     public string GetGameInstructions()
