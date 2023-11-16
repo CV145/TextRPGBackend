@@ -5,6 +5,11 @@ using System.Text;
 
 namespace TextRPGBackend.Controllers
 {
+    /*TODO
+     * - Parse responses (CONFLICT RESOLVED, ITEM OBTAINED, SPELL OBTAINED, X HP LOST, ERROR)
+     * - Pass in player items/stats to prompts
+     * - Integrate and setup Google Firebase backend
+     */
 
     //Used for handling game interactions
     [ApiController]
@@ -30,6 +35,7 @@ namespace TextRPGBackend.Controllers
         {
             Console.WriteLine("API Key: " + _apiKey);
             var instructions = _instructionService.GetGameInstructions();
+            //var playerStats = string with player items and stats
             var fullPrompt = $"{instructions}\n\n{playerPrompt}";
 
 

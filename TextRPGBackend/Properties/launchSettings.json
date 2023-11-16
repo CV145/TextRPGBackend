@@ -16,7 +16,7 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "OPENAI_API_KEY": "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"
+        "OPENAI_API_KEY": "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"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7098;http://localhost:5241"
